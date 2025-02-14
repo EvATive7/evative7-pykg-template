@@ -14,7 +14,6 @@ name = "name" # TODO: Finish this
 readme = "README.md"
 requires-python = ">=3.6"
 version = "0.0.1"
-# TODO: Finish this if you need to add anything
 
 [project.optional-dependencies]
 dev = ["black", "isort", "flake8", "pytest"] # TODO: Finish this
@@ -34,3 +33,5 @@ profile = "black"
 
 [tool.setuptools.package-dir]
 "" = "src"
+
+# TODO: Finish this file if you need to add anything
