@@ -2,7 +2,7 @@
 
 # evative7-pykg-template
 
-A project template for writing modern and distributable python packages based on this, while ensuring unity of style and ease of management.
+A project template for writing modern and distributable Python packages based on this, while ensuring unity of style and focus on code.
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -24,3 +24,7 @@ A project template for writing modern and distributable python packages based on
 1. `pip install .[dev]`
 1. `pre-commit install`
 1. Finish docs, TODOs and codes
+   > If you need to publish to pypi...
+1. Change the `if` field of `pypi-publish` Job in [package.yml](./.github/workflows/package.yml) to true
+1. Create the project in pypi
+1. Adding a Trusted Publisher to this project (see https://docs.pypi.org/trusted-publishers/adding-a-publisher/)
