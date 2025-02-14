@@ -15,4 +15,4 @@ A project template for writing modern and distributable python packages based on
 1. `source .venv/bin/activate`(bash) or `& .venv\Scripts\activate`(powershell)
 1. `pip install .[dev]`
 1. `pre-commit install`
-1. Finish docs and TODOs
+1. Finish docs, TODOs and codes
