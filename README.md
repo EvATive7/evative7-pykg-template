@@ -8,7 +8,7 @@ A project template for writing modern and distributable Python packages based on
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 <!-- TODO: Finish this if you need badges
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/YOURNAME/YOURREPO/WORKFLOWFILE)](https://github.com/YOURNAME/YOURREPO/actions)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/YOURNAME/YOURREPO/package.yml)](https://github.com/YOURNAME/YOURREPO/actions)
 [![Python](https://img.shields.io/pypi/pyversions/YOURPROJECT)](https://badge.fury.io/py/YOURPROJECT)
 [![PyPI version](https://badge.fury.io/py/YOURPROJECT.svg)](https://badge.fury.io/py/YOURPROJECT)
 [![Coverage Status](https://coveralls.io/repos/YOURNAME/YOURREPO/badge.svg?branch=develop&service=github)](https://coveralls.io/github/YOURNAME/YOURREPO?branch=master)
@@ -19,6 +19,8 @@ A project template for writing modern and distributable Python packages based on
 
 ## Quickstart
 
+1. Generate a new project with this template
+1. Set `Workflow permissions` to `Read and write permissions` on Github
 1. `python -m venv .venv`
 1. `source .venv/bin/activate`(bash) or `& .venv\Scripts\activate`(powershell)
 1. `pip install .[dev]`
@@ -26,5 +28,4 @@ A project template for writing modern and distributable Python packages based on
 1. Finish docs, TODOs and codes
    > If you need to publish to pypi...
 1. Change the `if` field of `pypi-publish` Job in [package.yml](./.github/workflows/package.yml) to true
-1. Create the project in pypi
-1. Adding a Trusted Publisher to this project (see https://docs.pypi.org/trusted-publishers/adding-a-publisher/)
+1. [Add a new pending publisher](https://pypi.org/manage/account/publishing/)

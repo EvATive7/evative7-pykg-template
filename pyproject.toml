@@ -8,7 +8,7 @@ classifiers = [ # TODO: Finish this
   "Programming Language :: Python :: 3",
   "Operating System :: OS Independent",
 ]
-dependencies = ["build", "pre-commit"] # TODO: Finish this
+dependencies = ["build"] # TODO: Finish this
 description = "" # TODO: Finish this
 name = "name" # TODO: Finish this
 readme = "README.md"
@@ -16,7 +16,7 @@ requires-python = ">=3.6"
 version = "0.0.1"
 
 [project.optional-dependencies]
-dev = ["black", "isort", "flake8", "pytest"] # TODO: Finish this
+dev = ["black", "isort", "flake8", "pytest", "pre-commit"] # TODO: Finish this
 
 # [project.scripts]
 # changelog = "changelog:main" # TODO: Finish this, if a script is needed
