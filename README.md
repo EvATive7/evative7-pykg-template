@@ -23,7 +23,7 @@ A project template for writing modern and distributable Python packages based on
 1. Set `Workflow permissions` to `Read and write permissions` on Github
 1. `python -m venv .venv`
 1. `source .venv/bin/activate`(bash) or `& .venv\Scripts\activate`(powershell)
-1. `pip install .[dev]`
+1. `pip install .[dev,build]`
 1. `pre-commit install`
 1. Finish docs, TODOs and codes
    > If you need to publish to pypi...

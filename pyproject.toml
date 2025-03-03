@@ -8,15 +8,16 @@ classifiers = [ # TODO: Finish this
   "Programming Language :: Python :: 3",
   "Operating System :: OS Independent",
 ]
-dependencies = ["build"] # TODO: Finish this
+dependencies = [] # TODO: Finish this
 description = "" # TODO: Finish this
-name = "name" # TODO: Finish this
+name = "hello_world" # TODO: Finish this
 readme = "README.md"
 requires-python = ">=3.6"
 version = "0.0.1"
 
 [project.optional-dependencies]
 dev = ["black", "isort", "flake8", "pytest", "pre-commit"] # TODO: Finish this
+build = ["build"]
 
 # [project.scripts]
 # helloworld = "hello_world:main" # TODO: Finish this, if a script is needed
