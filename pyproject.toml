@@ -19,7 +19,7 @@ version = "0.0.1"
 dev = ["black", "isort", "flake8", "pytest", "pre-commit"] # TODO: Finish this
 
 # [project.scripts]
-# changelog = "changelog:main" # TODO: Finish this, if a script is needed
+# helloworld = "hello_world:main" # TODO: Finish this, if a script is needed
 
 [project.urls]
 "Homepage" = "https://github.com/EvATive7/" # TODO: Finish this
