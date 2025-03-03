@@ -9,8 +9,8 @@ A project template for writing modern and distributable Python packages based on
 
 <!-- TODO: Finish this if you need badges
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/YOURNAME/YOURREPO/package.yml)](https://github.com/YOURNAME/YOURREPO/actions)
-[![Python](https://img.shields.io/pypi/pyversions/YOURPROJECT)](https://badge.fury.io/py/YOURPROJECT)
-[![PyPI version](https://badge.fury.io/py/YOURPROJECT.svg)](https://badge.fury.io/py/YOURPROJECT)
+[![Python](https://img.shields.io/pypi/pyversions/YOURPROJECT)](https://pypi.org/project/YOURPROJECT)
+[![PyPI version](https://badge.fury.io/py/YOURPROJECT.svg)](https://pypi.org/project/YOURPROJECT)
 [![Coverage Status](https://coveralls.io/repos/YOURNAME/YOURREPO/badge.svg?branch=develop&service=github)](https://coveralls.io/github/YOURNAME/YOURREPO?branch=master)
 [![License](https://img.shields.io/github/license/YOURNAME/YOURREPO.svg)](https://pypi.org/project/YOURPROJECT/)
 
