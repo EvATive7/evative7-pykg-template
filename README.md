@@ -26,6 +26,8 @@ A project template for writing modern and distributable Python packages based on
 1. `pip install .[dev,build]`
 1. `pre-commit install`
 1. Finish docs, TODOs and codes
-   > If you need to publish to pypi...
+
+> If you need to publish to pypi...
+
 1. Change the `if` field of `pypi-publish` Job in [package.yml](./.github/workflows/package.yml) to `true`
 1. [Add a new pending publisher](https://pypi.org/manage/account/publishing/)
