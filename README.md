@@ -4,8 +4,7 @@
 
 A project template for writing modern and distributable Python packages based on this, while ensuring unity of style and focus on code.
 
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 
 <!-- TODO: Finish this if you need badges
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/YOURNAME/YOURREPO/package.yml)](https://github.com/YOURNAME/YOURREPO/actions)
@@ -21,10 +20,9 @@ A project template for writing modern and distributable Python packages based on
 
 1. Generate a new project with this template
 1. Set `Workflow permissions` to `Read and write permissions` on Github
-1. `python -m venv .venv`
+1. `uv venv`
 1. `source .venv/bin/activate`(bash) or `& .venv\Scripts\activate`(powershell)
-1. `pip install .[dev,build]`
-1. `pre-commit install`
+1. `uv sync`
 1. Finish docs, TODOs and codes
 
 > If you need to publish to pypi...

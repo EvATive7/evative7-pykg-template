@@ -1,6 +1,6 @@
 [build-system]
 build-backend = "setuptools.build_meta"
-requires = ["setuptools", "wheel", "setuptools-scm"]
+requires = ["setuptools-scm"]
 
 [project]
 authors = [{ name = "EvATive7" }]
@@ -14,10 +14,10 @@ name = "hello_world" # TODO: Finish this
 readme = "README.md"
 requires-python = ">=3.6"
 dynamic = ['version']
+# license = { text = "MIT" } # TODO: Finish this
 
 [project.optional-dependencies]
-dev = ["black", "isort", "flake8", "pytest", "pre-commit"] # TODO: Finish this
-build = ["build"]
+dev = ["pytest"] # TODO: Finish this
 
 # [project.scripts]
 # helloworld = "hello_world:main" # TODO: Finish this, if a script is needed
@@ -28,9 +28,6 @@ build = ["build"]
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["test"]
-
-[tool.isort]
-profile = "black"
 
 [tool.setuptools.package-dir]
 "" = "src"
