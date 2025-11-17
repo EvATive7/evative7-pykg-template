@@ -20,6 +20,7 @@ A project template for writing modern and distributable Python packages based on
 
 1. Generate a new project with this template
 1. Set `Workflow permissions` to `Read and write permissions` on Github
+1. Set `Allow GitHub Actions to create and approve pull requests` on Github
 1. `uv venv`
 1. `source .venv/bin/activate`(bash) or `& .venv\Scripts\activate`(powershell)
 1. `uv sync`

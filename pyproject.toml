@@ -12,7 +12,7 @@ dependencies = [] # TODO: Finish this
 description = "" # TODO: Finish this
 name = "hello_world" # TODO: Finish this
 readme = "README.md"
-requires-python = ">=3.6"
+requires-python = ">=3.6" # TODO: Finish this
 dynamic = ['version']
 # license = { text = "MIT" } # TODO: Finish this
 
