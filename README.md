@@ -26,8 +26,11 @@ Replace: `YOURPROJECT`, `YOURNAME`, `YOURREPO`
 1. Set `Workflow permissions` to `Read and write permissions` on Github
 1. Set `Allow GitHub Actions to create and approve pull requests` on Github
 1. Finish `pyproject.toml`
-1. `uv sync`
-1. Finish docs, TODOs and codes
+1. `uv sync --all-extras`
+1. Finish docs, LICENSE, TODOs and codes
+1. Follow the **Conventional Commit** rules strictly when writing commit messages.
+   `release-please` will automatically manage version updates and releases based on **SemVer**.
+   To manually specify a version, add `Release-As: x.x.x` in the commit body.
 
 > If you need to publish to pypi...
 
@@ -54,8 +57,8 @@ Replace: `YOURPROJECT`, `YOURNAME`, `YOURREPO`
 
 - **`pyproject.toml`**
 
-  - python version
-  - config&dependencies
+  - Python version
+  - Config & dependencies
 
     ```diff
     -requires = ["setuptools", "wheel", "setuptools-scm"]
@@ -70,10 +73,18 @@ Replace: `YOURPROJECT`, `YOURNAME`, `YOURREPO`
     ```
 
 - **`.github/workflows/package.yml`** — updated
-- Quickstart
-  ```diff
-  -1. `python -m venv .venv`
-  -1. `pip install .[dev,build]`
-  -1. `pre-commit install`
-  +1. `uv sync`
-  ```
+
+  - Check `if` option of `pypi-publish` Job
+
+- Others
+
+  - Set `Allow GitHub Actions to create and approve pull requests` on Github
+  - `pre-commit uninstall`
+  - Quickstart:
+
+    ```diff
+    -1. `python -m venv .venv`
+    -1. `pip install .[dev,build]`
+    -1. `pre-commit install`
+    +1. `uv sync --all-extras`
+    ```
