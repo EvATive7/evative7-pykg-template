@@ -49,7 +49,7 @@ Replace: `YOURPROJECT`, `YOURNAME`, `YOURREPO`
 - **`README.md`**
 
   ```diff
-  +[![uv](https://img.shields.io/endpoint?url=...)](https://github.com/astral-sh/uv)
+  +[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
   ```
 
 - **`pyproject.toml`**
