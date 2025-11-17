@@ -12,12 +12,12 @@ dependencies = [] # TODO: Finish this
 description = "" # TODO: Finish this
 name = "hello_world" # TODO: Finish this
 readme = "README.md"
-requires-python = ">=3.6" # TODO: Finish this
+requires-python = ">=3.10" # TODO: Finish this
 dynamic = ['version']
 # license = { text = "MIT" } # TODO: Finish this
 
 [project.optional-dependencies]
-dev = ["pytest"] # TODO: Finish this
+dev = ["ruff", "pytest"] # TODO: Finish this
 
 # [project.scripts]
 # helloworld = "hello_world:main" # TODO: Finish this, if a script is needed
