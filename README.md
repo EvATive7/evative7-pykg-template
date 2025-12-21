@@ -37,6 +37,63 @@ Replace: `YOURPROJECT`, `YOURNAME`, `YOURREPO`
 1. Change the `if` field of `pypi-publish` Job in [package.yml](./.github/workflows/package.yml) to `true`
 1. [Add a new pending publisher](https://pypi.org/manage/account/publishing/)
 
+## Migration guide (v0.0.3 → v0.0.4)
+
+### `.github/workflows/package.yml`
+
+```diff
+@@ x @@ jobs:
+         run: uv sync
+
+       - name: Build distributions
++        env:
++          SETUPTOOLS_SCM_PRETEND_VERSION: ${{ needs.release-please.outputs.tag_name }}
+         run: uv build
+
+       - name: Upload distributions
+@@ x @@ jobs:
+       contents: read
+       id-token: write
+
+-    environment:
+-      name: release
+-
+     steps:
+       - name: Retrieve release distributions
+         uses: actions/download-artifact@v4
+```
+
+### `.pyproject.toml`
+
+```diff
+@@ x @@
+ [build-system]
+-build-backend = "setuptools.build_meta"
+-requires = ["setuptools-scm"]
++requires = ["hatchling", "hatch-vcs"]
++build-backend = "hatchling.build"
+
+@@ x @@
+-[tool.setuptools.package-dir]
+-"" = "src"
+-
+-[tool.setuptools_scm]
+-version_scheme = "post-release"
+-local_scheme = "node-and-date"
++[tool.hatch.build.targets.sdist]
++exclude = [
++  "/.github",
++  "/.vscode",
++  "/uv.lock",
++  "/.gitignore",
++]
+
++[tool.hatch.version]
++source = "vcs"
+
+ # TODO: Finish this file if you need to add anything
+```
+
 ## Migration guide (v0.0.2 → v0.0.3)
 
 - **`.flake8`, `.pre-commit-config.yaml`** — removed
